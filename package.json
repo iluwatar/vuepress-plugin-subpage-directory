@@ -1,0 +1,43 @@
+{
+  "name": "vuepress-plugin-subpage-directory",
+  "description": "VuePress plugin for generating subpage directory",
+  "version": "0.0.1",
+  "type": "module",
+  "keywords": [
+    "index",
+    "directory",
+    "vuepress",
+    "vuepress2",
+    "vuepress-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iluwatar/vuepress-plugin-subpage-directory.git",
+    "directory": ""
+  },
+  "author": "Ilkka Seppälä <iluwatar@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "^14.0.0 || ^16.0.0 || >=18.0.0"
+  },
+  "scripts": {
+    "start": "tsc -b --watch",
+    "clean": "rimraf ./dist",
+    "build": "tsc -b",
+    "prepare": "pnpm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@vuepress/core": "2.0.0-beta.53"
+  },
+  "devDependencies": {
+    "rimraf": "3.0.2"
+  }
+}
