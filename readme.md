@@ -26,12 +26,11 @@ export default {
 
 ```vue
 <script setup>
-import { useLinks } from 'vuepress-plugin-subpage-directory/client'
-let links = useLinks()
+import { subpageLinks } from 'vuepress-plugin-subpage-directory/client'
 </script>
 
 <template>
-  <div v-for="link in links">
+  <div v-for="link in subpageLinks">
     <RouterLink :to="link">
       <h3 v-text="link" />
     </RouterLink>

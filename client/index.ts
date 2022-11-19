@@ -1,15 +1,6 @@
-import { links } from '@temp/subpageDirectory/data'
-import type { ComputedRef } from 'vue'
-import { ref, computed } from 'vue'
-
 export interface SubpageLink {
-  path: string
+    path: string
 }
-
-let linksMap = ref<SubpageLink[]>(links)
-
-export let useLinks = (): ComputedRef<SubpageLink[]> => {
-  return computed(() =>
-    linksMap.value
-  )
-}
+  
+declare const __SUBPAGELINKS__: SubpageLink[];
+export const subpageLinks = __SUBPAGELINKS__;
