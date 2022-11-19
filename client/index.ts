@@ -1,6 +1,5 @@
-import type { ComputedRef } from 'vue'
-// @ts-ignore
 import { links } from '@temp/subpageDirectory/data'
+import type { ComputedRef } from 'vue'
 import { ref, computed } from 'vue'
 
 export interface Link {
