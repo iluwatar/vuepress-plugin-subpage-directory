@@ -25,8 +25,8 @@ export default {
 ## Usage
 
 ```vue
-<script lang="ts" setup>
-import { useLinks } from 'vuepress-plugin-subpage-diretory/client'
+<script setup>
+import { useLinks } from 'vuepress-plugin-subpage-directory/client'
 let links = useLinks()
 </script>
 
