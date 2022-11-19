@@ -1,6 +1,3 @@
-export interface SubpageLink {
-    path: string
-}
-  
-declare const __SUBPAGELINKS__: SubpageLink[];
+declare const __SUBPAGELINKS__: string;
+
 export const subpageLinks = __SUBPAGELINKS__;
